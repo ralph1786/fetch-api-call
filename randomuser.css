@@ -12,6 +12,7 @@ button {
     background: none;
     outline: none;
     border: 0;
+    width: 100%;
 }
 
 .title {
@@ -21,7 +22,7 @@ button {
 }
 
 .user-profile {
-    margin: auto;
+    margin: 0 auto;
     width: 27em;
     height: 11em;
     background: #fff;
@@ -84,5 +85,77 @@ button {
 
 #city {
     text-transform: uppercase;
+}
+
+/* Adding responsiveness to the application. */
+
+@media (max-width: 475px) {
+    .title{
+        font-size: 1.50em;
+    }
+    .user-profile {
+        width: 100%;
+    }
+    .user-profile>img#avatar {
+        padding: .5em;
+        margin-left: .2em;
+        margin-top: .2em;
+        height: 4.50em;
+        width: 4.50em;
+        border-radius: 18em;
+    }
+    .user-profile #fullname {
+        margin: auto;
+        margin-top: -4.40em;
+        margin-left: 7.65em;
+        color: #259bb3;
+        font-size: 1.15em;
+        font-family: "Coda", sans-serif;
+        font-weight: bold;
+    }
+    #username {
+        margin: auto;
+        display: inline-block;
+        margin-left: 11.35em;
+        color: #2288cc;
+        font-size: .77em;
+        font-family: "varela round", sans-serif;
+    }
+    .user-profile>.description {
+        margin: auto;
+        margin-top: 2.50em;
+        margin-right: 3em;
+        width: 18em;
+        color: #6c7677;
+        font-size: .77em;
+        font-family: "varela round", sans-serif;
+    }
+}
+
+@media(max-width: 325px) {
+    .title {
+        font-size: 1.35em;
+    }
+    .user-profile #fullname {
+        margin: auto;
+        margin-top: -4.40em;
+        margin-left: 6.65em;
+        color: #259bb3;
+        font-size: 1.15em;
+        font-family: "Coda", sans-serif;
+        font-weight: bold;
+    }
+
+    #username {
+        margin: auto;
+        display: inline-block;
+        margin-left: 9.85em;
+        color: #2288cc;
+        font-size: .77em;
+        font-family: "varela round", sans-serif;
+    }
+    .user-profile>.description {
+        margin-left: .65em;
+    }
 }
 
